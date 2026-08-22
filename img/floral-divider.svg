@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" fill="none">
+  <defs>
+    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0"/>
+      <stop offset="25%" style="stop-color:#D4AF37;stop-opacity:0.7"/>
+      <stop offset="50%" style="stop-color:#C8A2C8;stop-opacity:0.9"/>
+      <stop offset="75%" style="stop-color:#D4AF37;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Línea central -->
+  <line x1="0" y1="40" x2="800" y2="40" stroke="url(#divGrad)" stroke-width="1" opacity="0.6"/>
+
+  <!-- Flor central -->
+  <!-- Pétalos -->
+  <ellipse cx="400" cy="30" rx="6" ry="12" stroke="#C8A2C8" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <ellipse cx="400" cy="50" rx="6" ry="12" stroke="#C8A2C8" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <ellipse cx="388" cy="40" rx="12" ry="6" stroke="#C8A2C8" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <ellipse cx="412" cy="40" rx="12" ry="6" stroke="#C8A2C8" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <ellipse cx="391" cy="31" rx="8" ry="12" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.6"
+           transform="rotate(-45 391 31)"/>
+  <ellipse cx="409" cy="31" rx="8" ry="12" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.6"
+           transform="rotate(45 409 31)"/>
+  <ellipse cx="391" cy="49" rx="8" ry="12" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.6"
+           transform="rotate(45 391 49)"/>
+  <ellipse cx="409" cy="49" rx="8" ry="12" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.6"
+           transform="rotate(-45 409 49)"/>
+  <!-- Centro -->
+  <circle cx="400" cy="40" r="5" stroke="#D4AF37" stroke-width="1.2" fill="none" opacity="0.9"/>
+  <circle cx="400" cy="40" r="2" fill="#D4AF37" opacity="0.5"/>
+
+  <!-- Ramas izquierda -->
+  <path d="M 388 40 Q 360 35 340 40 Q 320 45 300 40" stroke="url(#divGrad)" stroke-width="1" opacity="0.7"/>
+  <path d="M 370 40 Q 365 30 358 26" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+  <path d="M 350 40 Q 348 30 342 27" stroke="#C8A2C8" stroke-width="1" opacity="0.5"/>
+  <!-- Hojitas izquierda -->
+  <ellipse cx="358" cy="24" rx="5" ry="8" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.5"
+           transform="rotate(-30 358 24)"/>
+  <ellipse cx="342" cy="25" rx="4" ry="7" stroke="#C8A2C8" stroke-width="1" fill="none" opacity="0.5"
+           transform="rotate(-20 342 25)"/>
+
+  <!-- Pequeña flor izquierda -->
+  <circle cx="300" cy="40" r="6" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.6"/>
+  <circle cx="300" cy="40" r="2.5" stroke="#C8A2C8" stroke-width="1" fill="none" opacity="0.6"/>
+  <line x1="300" y1="32" x2="300" y2="48" stroke="#D4AF37" stroke-width="0.8" opacity="0.4"/>
+  <line x1="292" y1="40" x2="308" y2="40" stroke="#D4AF37" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Continuación izquierda -->
+  <path d="M 294 40 Q 260 38 230 40 Q 200 42 170 40" stroke="url(#divGrad)" stroke-width="0.8" opacity="0.5"/>
+  <path d="M 250 40 Q 248 32 243 29" stroke="#D4AF37" stroke-width="0.8" opacity="0.4"/>
+  <ellipse cx="243" cy="27" rx="4" ry="6" stroke="#D4AF37" stroke-width="0.8" fill="none" opacity="0.4"
+           transform="rotate(-25 243 27)"/>
+
+  <!-- Pequeña flor izquierda 2 -->
+  <circle cx="170" cy="40" r="5" stroke="#C8A2C8" stroke-width="1" fill="none" opacity="0.5"/>
+  <circle cx="170" cy="40" r="2" fill="#C8A2C8" opacity="0.3"/>
+
+  <!-- Ramas derecha (espejo) -->
+  <path d="M 412 40 Q 440 35 460 40 Q 480 45 500 40" stroke="url(#divGrad)" stroke-width="1" opacity="0.7"/>
+  <path d="M 430 40 Q 435 30 442 26" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+  <path d="M 450 40 Q 452 30 458 27" stroke="#C8A2C8" stroke-width="1" opacity="0.5"/>
+  <!-- Hojitas derecha -->
+  <ellipse cx="442" cy="24" rx="5" ry="8" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.5"
+           transform="rotate(30 442 24)"/>
+  <ellipse cx="458" cy="25" rx="4" ry="7" stroke="#C8A2C8" stroke-width="1" fill="none" opacity="0.5"
+           transform="rotate(20 458 25)"/>
+
+  <!-- Pequeña flor derecha -->
+  <circle cx="500" cy="40" r="6" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.6"/>
+  <circle cx="500" cy="40" r="2.5" stroke="#C8A2C8" stroke-width="1" fill="none" opacity="0.6"/>
+  <line x1="500" y1="32" x2="500" y2="48" stroke="#D4AF37" stroke-width="0.8" opacity="0.4"/>
+  <line x1="492" y1="40" x2="508" y2="40" stroke="#D4AF37" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Continuación derecha -->
+  <path d="M 506 40 Q 540 38 570 40 Q 600 42 630 40" stroke="url(#divGrad)" stroke-width="0.8" opacity="0.5"/>
+  <path d="M 550 40 Q 552 32 557 29" stroke="#D4AF37" stroke-width="0.8" opacity="0.4"/>
+  <ellipse cx="557" cy="27" rx="4" ry="6" stroke="#D4AF37" stroke-width="0.8" fill="none" opacity="0.4"
+           transform="rotate(25 557 27)"/>
+
+  <!-- Pequeña flor derecha 2 -->
+  <circle cx="630" cy="40" r="5" stroke="#C8A2C8" stroke-width="1" fill="none" opacity="0.5"/>
+  <circle cx="630" cy="40" r="2" fill="#C8A2C8" opacity="0.3"/>
+</svg>

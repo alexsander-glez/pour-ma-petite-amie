@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:title"        content="Toi et Moi ❤️"/>
+  <meta property="og:description"  content="Feliz Aniversario — Un regalo especial para ti, corazón 🌷"/>
+  <meta property="og:image"        content="img/foto-novios.jpg"/>
+  <meta property="og:image:width"  content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:type"         content="website"/>
+  <meta property="og:url"          content="https://toi-et-moi.netlify.app"/>
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="Toi et Moi ❤️"/>
+  <meta name="twitter:description" content="Feliz Aniversario 🌷"/>
+  <meta name="twitter:image"       content="img/foto-novios.jpg"/>
+
+  <title>Toi et Moi ❤️</title>
+
+  <!-- ═══ TIPOGRAFÍAS ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       ESCENA 1 — HERO / PORTADA
+       ══════════════════════════════════════ -->
+  <section class="scene" id="scene-1">
+
+    <!-- Fondo: cámara enorme desenfocada -->
+    <div class="hero-bg" aria-hidden="true">
+      <img src="img/camera.svg" alt="" class="hero-camera"/>
+    </div>
+
+    <!-- Bokeh SVG -->
+    <div class="hero-bokeh" aria-hidden="true">
+      <img src="img/bokeh.svg" alt="" class="bokeh-svg"/>
+    </div>
+
+    <!-- Film texture SVG -->
+    <div class="film-overlay" aria-hidden="true">
+      <img src="img/film-texture.svg" alt="" class="film-svg"/>
+    </div>
+
+    <!-- Tulipanes laterales -->
+    <div class="tulip-left" aria-hidden="true">
+      <img src="img/tulips.svg" alt=""/>
+    </div>
+    <div class="tulip-right" aria-hidden="true">
+      <img src="img/tulips.svg" alt=""/>
+    </div>
+
+    <!-- Sparkles -->
+    <div class="sparkles-overlay" aria-hidden="true">
+      <img src="img/sparkles.svg" alt="" class="sparkles-svg"/>
+    </div>
+
+    <!-- Contenido central -->
+    <div class="hero-content">
+      <div class="floral-top" aria-hidden="true">
+        <img src="img/floral-divider.svg" alt="" class="floral-svg floral-svg--top"/>
+      </div>
+
+      <p  class="hero-eyebrow  anim-fade-up" style="--d:0.3s">Toi et Moi</p>
+      <h1 class="hero-title    anim-fade-up" style="--d:0.7s">
+        Feliz Aniversario&nbsp;❤️
+      </h1>
+
+      <div class="floral-bottom" aria-hidden="true">
+        <img src="img/floral-divider.svg" alt="" class="floral-svg floral-svg--bottom"/>
+      </div>
+
+      <button
+        class="btn-primary anim-fade-up"
+        style="--d:1.2s"
+        id="btn-comenzar"
+      >
+        Comenzar nuestra historia&nbsp;→
+      </button>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ESCENA 2 — FLASH + POLAROID
+       ══════════════════════════════════════ -->
+  <section class="scene hidden" id="scene-2">
+
+    <div class="film-overlay" aria-hidden="true">
+      <img src="img/film-texture.svg" alt="" class="film-svg"/>
+    </div>
+
+    <div class="bokeh-subtle" aria-hidden="true">
+      <img src="img/bokeh.svg" alt="" class="bokeh-svg bokeh-svg--soft"/>
+    </div>
+
+    <!-- Cámara centrada que "dispara" -->
+    <div class="s2-camera-wrap" id="s2-camera-wrap">
+      <img src="img/camera.svg" alt="" class="s2-camera-img"/>
+      <div class="s2-flash-burst" id="s2-flash-burst" aria-hidden="true"></div>
+    </div>
+
+    <!-- Polaroid que sale de la cámara -->
+    <div class="polaroid-wrap hidden" id="polaroid-wrap">
+      <div class="polaroid" id="polaroid">
+        <div class="polaroid-inner">
+          <div class="polaroid-reveal" id="polaroid-reveal">
+            <img
+              src="img/foto-novios.jpg"
+              alt="Nosotros ❤️"
+              class="polaroid-img"
+              id="polaroid-img"
+            />
+          </div>
+        </div>
+        <p class="polaroid-caption">Nosotros ❤️</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ESCENA 3 — CARTA (máquina de escribir)
+       ══════════════════════════════════════ -->
+  <section class="scene hidden" id="scene-3">
+
+    <div class="film-overlay" aria-hidden="true">
+      <img src="img/film-texture.svg" alt="" class="film-svg"/>
+    </div>
+
+    <div class="bokeh-subtle" aria-hidden="true">
+      <img src="img/bokeh.svg" alt="" class="bokeh-svg bokeh-svg--soft"/>
+    </div>
+
+    <!-- Sparkles decorativos -->
+    <div class="sparkles-overlay sparkles-overlay--soft" aria-hidden="true">
+      <img src="img/sparkles.svg" alt="" class="sparkles-svg"/>
+    </div>
+
+    <div class="s3-layout">
+
+      <!-- Polaroid a la izquierda -->
+      <div class="s3-photo anim-slide-left" style="--d:0.2s">
+        <div class="polaroid polaroid--small">
+          <div class="polaroid-inner">
+            <img
+              src="img/foto-novios.jpg"
+              alt="Nosotros ❤️"
+              class="polaroid-img"
+            />
+          </div>
+          <p class="polaroid-caption">Nosotros ❤️</p>
+        </div>
+      </div>
+
+      <!-- Carta a la derecha -->
+      <div class="s3-carta anim-slide-right" style="--d:0.4s">
+        <div class="floral-carta-top" aria-hidden="true">
+          <img src="img/floral-divider.svg" alt="" class="floral-svg floral-svg--carta"/>
+        </div>
+
+        <h2 class="carta-title">Feliz Aniversario</h2>
+
+        <p class="carta-text" id="typewriter-text"></p>
+
+        <!-- Botón aparece al terminar el typewriter -->
+        <div class="s3-btn-wrap hidden" id="s3-btn-wrap">
+          <button class="btn-heart" id="btn-abrazo">
+            Descubre ❤️
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ESCENA 4 — CORAZONES / EXPLOSIÓN
+       ══════════════════════════════════════ -->
+  <section class="scene hidden" id="scene-4">
+
+    <div class="film-overlay" aria-hidden="true">
+      <img src="img/film-texture.svg" alt="" class="film-svg"/>
+    </div>
+
+    <!-- Lluvia de símbolos -->
+    <div class="rain-container" id="rain-container" aria-hidden="true"></div>
+
+    <!-- Anillos de expansión -->
+    <div class="burst-rings" id="burst-rings" aria-hidden="true">
+      <div class="burst-ring br1"></div>
+      <div class="burst-ring br2"></div>
+      <div class="burst-ring br3"></div>
+    </div>
+
+    <!-- Sparkles grandes -->
+    <div class="sparkles-overlay sparkles-overlay--full" aria-hidden="true">
+      <img src="img/sparkles.svg" alt="" class="sparkles-svg sparkles-svg--big"/>
+    </div>
+
+    <div class="s4-center">
+      <p class="s4-word anim-pop" style="--d:0.1s">❤️</p>
+      <p class="s4-word anim-pop" style="--d:0.35s">🌸</p>
+      <p class="s4-word anim-pop" style="--d:0.6s">✨</p>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ESCENA 5 — FOTO COLGADA
+       ══════════════════════════════════════ -->
+  <section class="scene hidden" id="scene-5">
+
+    <div class="film-overlay" aria-hidden="true">
+      <img src="img/film-texture.svg" alt="" class="film-svg"/>
+    </div>
+
+    <div class="bokeh-subtle" aria-hidden="true">
+      <img src="img/bokeh.svg" alt="" class="bokeh-svg bokeh-svg--soft"/>
+    </div>
+
+    <!-- SVGs decorativos flotantes -->
+    <div class="s5-deco" aria-hidden="true">
+      <img src="img/watermelon.svg" alt="" class="deco-svg deco-watermelon"/>
+      <img src="img/chocolate.svg"  alt="" class="deco-svg deco-chocolate"/>
+      <img src="img/pin.svg"        alt="" class="deco-svg deco-pin"/>
+    </div>
+
+    <!-- Foto colgada con hilo -->
+    <div class="hung-wrap" id="hung-wrap">
+      <div class="hung-nail" aria-hidden="true">📎</div>
+      <div class="hung-string" aria-hidden="true"></div>
+      <div class="hung-photo" id="hung-photo">
+        <img
+          src="img/foto-novios.jpg"
+          alt="Nosotros ❤️"
+          class="hung-img"
+        />
+        <div class="hung-heart" aria-hidden="true">❤️</div>
+      </div>
+    </div>
+
+    <p class="s5-quote anim-fade-up" style="--d:1s">
+      Gracias por escribir la historia<br/>más bonita de mi vida
+    </p>
+
+    <!-- Botón siguiente -->
+    <button class="btn-sobre anim-fade-up" style="--d:1.6s" id="btn-sobre">
+      Leer tu carta&nbsp;✉️
+    </button>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ESCENA 6 — SOBRE / CARTA FINAL
+       ══════════════════════════════════════ -->
+  <section class="scene hidden" id="scene-6">
+
+    <div class="film-overlay" aria-hidden="true">
+      <img src="img/film-texture.svg" alt="" class="film-svg"/>
+    </div>
+
+    <div class="bokeh-subtle" aria-hidden="true">
+      <img src="img/bokeh.svg" alt="" class="bokeh-svg bokeh-svg--soft"/>
+    </div>
+
+    <!-- Tulipanes cierre -->
+    <div class="tulip-left tulip-left--s6" aria-hidden="true">
+      <img src="img/tulips.svg" alt=""/>
+    </div>
+    <div class="tulip-right tulip-right--s6" aria-hidden="true">
+      <img src="img/tulips.svg" alt=""/>
+    </div>
+
+    <!-- Lluvia de tulipanes, corazones y sandías -->
+    <div class="letter-rain" id="letter-rain" aria-hidden="true"></div>
+
+    <!-- Sparkles -->
+    <div class="sparkles-overlay sparkles-overlay--soft" aria-hidden="true">
+      <img src="img/sparkles.svg" alt="" class="sparkles-svg"/>
+    </div>
+
+    <!-- Ícono sobre -->
+    <div class="s6-envelope anim-pop" style="--d:0.2s">✉️</div>
+
+    <!-- Carta final -->
+    <div class="s6-letter anim-fade-up" style="--d:0.6s">
+
+      <div class="floral-carta-top" aria-hidden="true">
+        <img src="img/floral-divider.svg" alt="" class="floral-svg floral-svg--carta"/>
+      </div>
+
+      <p class="s6-para-ti">Para ti ❤️</p>
+
+      <div class="s6-text" id="s6-text">
+        <p>
+          Gracias por llenar mi vida de momentos tan hermosos,
+          dulces e inolvidables.
+        </p>
+        <p>
+          Cada día contigo florece como los tulipanes que tanto amas;
+          es tan dulce como esa fruta que lleva tu nombre y tan mágico
+          como ese universo de luces, cámaras y transiciones que refleja
+          la forma tan bonita en la que ves el mundo.
+        </p>
+        <p>
+          Contigo aprendí que el hogar no siempre es un lugar;
+          a veces tiene un nombre, una sonrisa y un abrazo.
+        </p>
+        <p class="s6-highlight">Eres mi lugar favorito.</p>
+        <p>
+          Gracias por cada risa, cada aventura, cada fotografía que guarda
+          nuestros recuerdos y por hacer que incluso los días más sencillos
+          se conviertan en mis favoritos.
+        </p>
+        <p>
+          Hoy solo quiero recordarte cuánto te amo y lo agradecido que estoy
+          por compartir mi vida contigo.
+        </p>
+        <p class="s6-firma">
+          Feliz Aniversario, corazón mío.<br/>
+          <span>Te amo infinitamente. ❤️</span>
+        </p>
+      </div>
+
+      <div class="floral-carta-bottom" aria-hidden="true">
+        <img src="img/floral-divider.svg" alt="" class="floral-svg floral-svg--carta"/>
+      </div>
+
+      <!-- Cierre final -->
+      <div class="s6-closing" id="s6-closing">
+        <p class="s6-closing-intro">Aquí todavía faltan muchas fotografías…</p>
+        <p class="s6-dots">. . .</p>
+        <p class="s6-closing-main">
+          Porque mis recuerdos favoritos<br/>
+          todavía no los hemos vivido.
+        </p>
+        <p class="s6-dots">. . .</p>
+        <p class="s6-closing-siempre">Siempre tú.</p>
+        <p class="s6-closing-siempre">Siempre nosotros.</p>
+        <p class="s6-closing-heart">❤️</p>
+      </div>
+
+      <button class="btn-restart" id="btn-restart">
+        Volver al inicio&nbsp;🔄
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TRANSICIÓN FLASH GLOBAL
+       ══════════════════════════════════════ -->
+  <div class="flash-overlay" id="flash-overlay" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       BOTÓN MÚSICA
+       ══════════════════════════════════════ -->
+  <button class="music-btn" id="music-btn" aria-label="Música">🎵</button>
+
+  <audio id="bg-music" loop>
+    <source src="music/je-taime.mp3" type="audio/mpeg"/>
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
